@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace _22
 {
+    Ticked ted = new Ticked();
     internal class Ticked
     {
         public int id
