@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _22
 {
-    
+    Ticket ted = new Ticket();
     class Ticket
     {
         public int id { get; set; }
