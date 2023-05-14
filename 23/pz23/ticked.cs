@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace pz23
 {
+    ticked ted = new ticked();
      class ticked
     {
         public virtual int id

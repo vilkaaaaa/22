@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace pz23
 {
+    ReturnedTicket tede = new ReturnedTicket();
     class ReturnedTicket : ticked
     {
         public DateTime ReturnDate { get; set; }
