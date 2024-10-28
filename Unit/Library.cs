@@ -8,7 +8,7 @@ namespace Unit
 {
     internal class Library
     {
-        public List<string> Items { get; set; } = new List<string>();
+        public List<string> Items {get; set; } = new List<string>();
         public int Id { get; set; }
 
     }
