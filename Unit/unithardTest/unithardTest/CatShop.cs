@@ -8,7 +8,7 @@ namespace unithardTest
 {
     public class CatShop
     {
-        public List <string> Products { get;private set; } = new List <string> ();
+        public List<string> Products { get; private set; } = new List<string>();
         public bool OrderProcessed { get; private set; } = false;
         public bool PaymentSuccess { get; private set; } = false;
 

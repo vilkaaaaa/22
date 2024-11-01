@@ -15,7 +15,6 @@ namespace unithardTest
             Console.WriteLine("Добро пожаловать в магазин\n доступные товары:");
             while (true)
             {
-
                 for (int i = 0; i < availableProducts.Count; i++)
                 {
                     Console.WriteLine($"{i + 1}. {availableProducts[i]}");

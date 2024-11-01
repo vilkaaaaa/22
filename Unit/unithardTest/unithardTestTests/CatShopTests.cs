@@ -31,7 +31,7 @@ namespace unithardTest.Tests
         }
         [Fact]
         public void RemoveItemTest()
-        {
+        { 
             var catsh = new CatShop();
             catsh.RemoveItem("кот");
             Assert.DoesNotContain("кот", catsh.Products);
