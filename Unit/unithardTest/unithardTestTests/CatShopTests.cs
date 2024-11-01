@@ -22,12 +22,19 @@ namespace unithardTest.Tests
             Assert.True(catsh.OrderProcessed, "Заказ должен быть обработан.");
             Assert.True(catsh.OrderProcessed, "Оплата прошла успешно");
         }
-
+        [Fact]
         public void ProcessOrderTest()
         {
             var catsh = new CatShop();
-            var exception = Assert.Throws<InvalidOperationException>(() => catsh.ProcessOrder());
-            Assert.Equal("Корзина пустая", exception.Message);
+            var exception = Assert.Throws<InvalidCastException>(() => catsh.ProcessOrder());
+            Assert.Equal("Корзина пуста. Невыбрано ни одного товара", exception.Message);
+        }
+        [Fact]
+        public void RemoveItemTest()
+        {
+            var catsh = new CatShop();
+            catsh.RemoveItem("кот");
+            Assert.DoesNotContain("кот", catsh.Products);
         }
     }
 }

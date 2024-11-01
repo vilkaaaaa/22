@@ -43,11 +43,14 @@ namespace unithardTest
                 {
                     string selectedItem = availableProducts[itemNumber - 1];
                     catsh.AddItem(selectedItem);
+
                 }
                 else
                 {
                     Console.WriteLine("Неверный ввод, выберите из имеющихся товаров");
                 }
+                catsh.RemoveItem("кот");
+
             }
 
         }

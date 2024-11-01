@@ -35,6 +35,11 @@ namespace unithardTest
                 Console.WriteLine("не удалось провести оплату");
             }
         }
+        public void RemoveItem(string item)
+        {
+            Products.Remove(item);
+            Console.WriteLine($"Товар {item} удален из корзины");
+        }
         public bool ProcessPayment()
         {
             Console.WriteLine("Процесс оплаты");
