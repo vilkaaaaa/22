@@ -32,7 +32,6 @@ namespace modellli
             return true;
             return false;
         }
-
         public void Execute(object? parameter)
         {
             if(_execute!= null)
